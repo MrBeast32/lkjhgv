@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Elements</title>
+  <style>
+    /* Basic styling for visualization */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+      text-align: center;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+    }
+    nav {
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
+    nav a:hover {
+      color: #4CAF50;
+    }
+    main {
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+    }
+    .interactive {
+      margin: 20px 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 5px 0;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My cool brownie Website</h1>
+    <p>A simple project with interactive stuff you can press</p>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main>
+    <section id="home">
+      <h2>this is not a very useful site huh</h2>
+      <p>Welcome to the homepage of this cool website!</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This is about cool brownies and stuff</p>
+      <div class="interactive">
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message" style="display: none;">Thanks for clicking! 😊</p>
+      </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://www.southernliving.com/thmb/eLSgazITlYrKf9EFTR9y1L2mSxg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Southern-Living-Homemade_Brownies_023-3c582f0fba1842dd918a3d9c26c1ab59.jpg" alt="Brownies">
+      </section>
+      
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out via the contact form or details here.</p>
+      <ul>
+        <li>Email: <a href="maiconsemail@gmail.com">maiconsemail@gmail.com</a></li>
+        <li>Phone: +475 300 7028</li>
+        <li>Address: 1600 Pennsylvania Avenue NW, Washington</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 My Brownie Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript to handle button interaction
+    function showMessage() {
+      const message = document.getElementById('message');
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
