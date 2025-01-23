@@ -1,0 +1,104 @@
+/* Import Rock Salt font */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Rock Salt', cursive; /* SpongeBob themed font */
+  background-color: #f3e5ab; /* Sandy background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #ffdf00; /* Bright yellow like SpongeBob's shirt */
+  text-align: center;
+  padding: 20px;
+  color: #ff4500; /* Bright coral text */
+  border-bottom: 5px solid #ff6347; /* Fun border */
+}
+
+/* Navigation */
+nav {
+  background-color: #ff7f50; /* Coral */
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 15px;
+  font-family: 'Rock Salt', cursive;
+}
+
+nav a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+.interactive {
+  margin-top: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Rock Salt', cursive;
+  background-color: #ffdf00;
+  border: 2px solid #ff6347;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #ffeb7f;
+}
+
+#dessertCost {
+  color: #ff4500;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #333;
+  font-family: 'Rock Salt', cursive;
+}
+
+/* Dessert Details Section */
+#dessertDetails {
+  margin-top: 30px;
+}
+
+#dessertName {
+  color: #ff6347;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#ingredientsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ingredientsList li {
+  margin: 5px 0;
+}
+
+#recipeText {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #ff4500; /* Coral */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Rock Salt', cursive;
+}
