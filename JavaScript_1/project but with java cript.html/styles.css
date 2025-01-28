@@ -1,0 +1,127 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Rock Salt', cursive; /* Fun cursive font */
+  background-color: #f3e5ab; /* Sandy background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #ffdf00; /* Bright yellow like SpongeBob */
+  text-align: center;
+  padding: 20px;
+  color: #ff4500; /* Bright coral text */
+  border-bottom: 5px solid #ff6347; /* Fun border */
+}
+
+/* Navigation */
+nav {
+  background-color: #ff7f50; /* Coral */
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 15px;
+  font-family: 'Rock Salt', cursive;
+}
+
+nav a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+.interactive {
+  margin-top: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Rock Salt', cursive;
+  background-color: #ffdf00;
+  border: 2px solid #ff6347;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #ffeb7f;
+}
+
+#dessertCost, #dessertComparison {
+  color: #ff4500;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #333;
+  font-family: 'Rock Salt', cursive;
+}
+
+#servingsCount {
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Dessert Details Section */
+#dessertInfo {
+  margin-top: 20px;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff8dc;
+  display: none;
+}
+
+#dessertInfo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ffdf00;
+}
+
+#ingredientsList {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: square;
+  color: #ff4500;
+}
+
+#ingredientsList li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+#recipeText {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background-color: #ff4500; /* Coral */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Rock Salt', cursive;
+}
+
+/* Dessert Section */
+h2 {
+  color: #ff4500;
+  font-family: 'Rock Salt', cursive;
+}
