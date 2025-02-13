@@ -1,0 +1,32 @@
+/* General Styles */
+body {
+    font-family: 'Rock Salt', cursive;
+    background-color: #f3e5ab;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #ff6347; /* Border for the table */
+  }
+  
+  td, th {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #ffdf00;
+  }
+  
+  td {
+    border: 1px solid #ff6347; /* Border for the cells */
+  }
+  
+  /* Other styles remain unchanged */
+  
