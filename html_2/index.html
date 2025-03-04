@@ -24,19 +24,15 @@
     <section id="home">
       <h2>Introduction</h2>
       <p>Welcome to the homepage of this cool website! We discuss various desserts and their recipes.</p>
-      <p>As <cite>Julia Child</cite> once said: "A party without cake is just a meeting."</p>
     </section>
 
     <section id="about">
       <h2>About</h2>
       <p>This website covers various desserts, their costs, and how to make them at home.</p>
-      <p>Example Code Snippet:</p>
-      <code>console.log('Enjoy your dessert!');</code>
     </section>
 
     <section id="desserts">
       <h2>Dessert Selector</h2>
-      <p>Choose a dessert from the dropdown menu:</p>
       <select id="dessertSelector">
         <option value="">--Select a Dessert--</option>
         <option value="Brownies">Brownies</option>
@@ -50,7 +46,7 @@
         <option value="Tiramisu">Tiramisu</option>
       </select>
 
-      <div id="dessertInfo" style="display: none; margin-top: 20px;">
+      <div id="dessertInfo" style="display: none;">
         <h3 id="dessertName"></h3>
         <p id="dessertCost"></p>
         <p><strong>Servings:</strong> <span id="servingsCount"></span></p>
@@ -63,7 +59,7 @@
 
     <section id="table-section">
       <h2>Dessert Costs</h2>
-      <table border="1">
+      <table>
         <tr>
           <th>Dessert</th>
           <th>Average Cost</th>
@@ -76,34 +72,6 @@
           <td>$6 (Premium)</td>
         </tr>
       </table>
-    </section>
-
-    <section id="multimedia">
-      <h2>Multimedia</h2>
-      <video width="320" height="240" controls>
-        <source src="dessert-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <audio controls>
-        <source src="background-music.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-      </audio>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea><br><br>
-        
-        <input type="checkbox" id="subscribe" name="subscribe">
-        <label for="subscribe">Subscribe to our newsletter</label><br><br>
-        
-        <input type="submit" value="Send">
-      </form>
     </section>
   </main>
 
