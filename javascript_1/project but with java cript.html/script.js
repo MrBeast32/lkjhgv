@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const servingsCount = document.getElementById("servingsCount");
   const ingredientsList = document.getElementById("ingredientsList");
   const recipeText = document.getElementById("recipeText");
-  const allParagraphs = document.getElementsByTagName("p"); // Finding elements by tag name
-  const dessertImage = document.getElementById("dessertImage"); // Adding an image element manipulation
+  const allParagraphs = document.getElementsByTagName("p");
+  const dessertImage = document.getElementById("dessertImage");
+  const reactionMessage = document.getElementById("reactionMessage");
   
-  const DEFAULT_SERVINGS = 4; // Named constant
+  const DEFAULT_SERVINGS = 4;
   
   dessertSelector.addEventListener("change", function () {
     const selectedDessert = dessertSelector.value;
@@ -18,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Dessert details including cost and servings
     const dessertData = {
       Brownies: { cost: 10, servings: DEFAULT_SERVINGS, ingredients: ["Flour", "Cocoa", "Sugar", "Butter"], recipe: "Mix ingredients and bake at 350°F for 25 minutes.", image: "brownie.jpg" },
       Cheesecake: { cost: 15, servings: 6, ingredients: ["Cream Cheese", "Sugar", "Eggs", "Graham Crackers", "Butter"], recipe: "Blend ingredients, pour over crust, and bake at 325°F for 45 minutes.", image: "cheesecake.jpg" },
@@ -46,15 +46,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Restoring the original math function
   function multiplyNumbers(a, b) {
     return a * b;
   }
   console.log("Multiplication result:", multiplyNumbers(4, 5));
 
-  // Additional rubric requirements
   function greetUser(name) {
     return `Hello, ${name}! Welcome to our dessert site!`;
   }
   console.log(greetUser("Visitor"));
+  
+  // Onclick event: Show a reaction when the image is clicked
+  dessertImage.addEventListener("click", function () {
+    reactionMessage.textContent = "Yummy choice! 🍰";
+    setTimeout(() => {
+      reactionMessage.textContent = "";
+    }, 2000);
+  });
+  
+  // Onload event: Show a greeting message when the page loads
+  window.onload = function () {
+    alert("Welcome to our dessert selection page! 🍪");
+  };
+  
+  // Onmouseover event: Change the text color when hovering over the recipe
+  recipeText.addEventListener("mouseover", function () {
+    recipeText.style.color = "red";
+  });
+  
+  recipeText.addEventListener("mouseout", function () {
+    recipeText.style.color = "black";
+  });
+  
+  // SetInterval to update a message every few seconds
+  let counter = 0;
+  const interval = setInterval(() => {
+    console.log(`You have been browsing for ${++counter} seconds`);
+    if (counter >= 10) {
+      clearInterval(interval);
+      console.log("Hope you found your favorite dessert!");
+    }
+  }, 1000);
 });
