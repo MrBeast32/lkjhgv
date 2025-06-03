@@ -81,7 +81,6 @@
     </style>
   </head>
   <body>
-    <!-- 🔐 Login / Sign Up -->
     <div class="auth-container" id="authContainer">
       <h2 id="authTitle">Sign Up</h2>
       <input type="text" id="username" placeholder="Username" />
@@ -93,7 +92,6 @@
       <div class="auth-message" id="authMessage"></div>
     </div>
 
-    <!-- 🎂 Main Dessert Content (shown after login) -->
     <div class="main-content" id="mainContent">
       <h2>Welcome, <span id="currentUserName"></span>! 🍰</h2>
 
@@ -102,7 +100,27 @@
         <select id="dessertSelect">
           <option value="">-- Select --</option>
           <option value="Brownie">Brownie</option>
-          <!-- Add more options here -->
+          <option value="Pineapple Upside-Down Sponge">
+            Pineapple Upside-Down Sponge
+          </option>
+          <option value="Jellyfish Jam Donuts">Jellyfish Jam Donuts</option>
+          <option value="Bikini Bottom Banana Pudding">
+            Bikini Bottom Banana Pudding
+          </option>
+          <option value="Gary’s Gooey Goo Cake">Gary’s Gooey Goo Cake</option>
+          <option value="Krabby Patty Cookie Sandwiches">
+            Krabby Patty Cookie Sandwiches
+          </option>
+          <option value="Bubble Bass Cheesecake Bites">
+            Bubble Bass Cheesecake Bites
+          </option>
+          <option value="Chum Bucket Gelatin Cups">
+            Chum Bucket Gelatin Cups
+          </option>
+          <option value="Mermaid Man Meringue">Mermaid Man Meringue</option>
+          <option value="Plankton’s Evil Eclairs">
+            Plankton’s Evil Eclairs
+          </option>
         </select>
       </div>
 
@@ -120,6 +138,20 @@
       <button class="logout-btn" onclick="logout()">Logout</button>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAGH3wgUwsBkqHr8iDAMdHfp8m34hOArnM",
+        authDomain: "cooking-website-3386b.firebaseapp.com",
+        projectId: "cooking-website-3386b",
+        storageBucket: "cooking-website-3386b.firebasestorage.app",
+        messagingSenderId: "739321929687",
+        appId: "1:739321929687:web:9bc57da4f14741b6fdb592",
+        measurementId: "G-6B8B847DS8",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
